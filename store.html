@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="store.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="boch" style=" display: flex;flex-direction:row;justify-content: space-between; height: 64px;align-items: center;background-color:#226D68 ;">   <!-- class="flex flex-row justify-between h-16 items-center boch bg-emerald-200 -->
+        <a href="index.html"><h1 style="  display: inline-block;">MyGrade</h1></a>
+        <div  class="icon search-container flex flex-row justify-between w-32 mr-5" style="display: flex; flex-direction: row;width: 128px; justify-content: space-between;margin-right: 25px;">
+            <button id="searchIcon" class="search-icon"><img class="w-8" src="search.svg" alt=""></button>
+            <button><a href="Login.html"><img src="account-bold.svg" alt="" ></a></button>
+            <button><a href="store.html"><img src="shopping-bag.svg" alt=""></a></button>
+            <div id="searchBar" class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search ...">
+                <button id="closeButton">×</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TODO:sec2 -->
+    <div class="sec2 mt-36 grid place-content-center gap-10 mx-36 p-11">
+
+<h1 id="mycart">My Cart</h1>
+<h1 class="text-red-600">Your cart is empty</h1>
+<a href="Pre-Orders.html" ><button>Continue shopping</button></a>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+    <footer class="mt-[500px]">
+            <ul>
+                <li><i class="fa fa-envelope" style="font-size:24px ; color:#D6955B "></i>********************</li>
+                <li><i class="fa fa-phone" style="font-size:24px ; color:#D6955B ; padding-right: 4px; "></i>********************</li>
+                <li><i class="fa fa-map-marker" style="font-size:24px ; color:#D6955B ; padding-right: 10px;"></i>*******************</li>
+            </ul>
+            <ul>
+                <h3>Liens utiles</h3>
+                <li>Services</li>
+                <li>Nous contacter</li>
+                <li>Magasins Exist</li>
+                <li>Blog</li>
+            </ul>
+            <ul>
+                <h3>Informations</h3>
+                <li>Présentation</li>
+                <li>Connexion</li>
+                <li>Mon compte</li>
+            </ul>
+            <ul>
+                <h3>Produits</h3>
+                <li>Promotions</li>
+                <li>Nouveaux produits</li>
+                <li>Meilleures ventes</li>
+            </ul>
+        
+        
+        </footer>
+    <script>
+        // الحصول على العناصر
+const searchIcon = document.getElementById('searchIcon');
+const searchBar = document.getElementById('searchBar');
+const closeButton = document.getElementById('closeButton');
+
+// إظهار شريط البحث عند الضغط على الشعار
+searchIcon.addEventListener('click', (event) => {
+    searchBar.style.top = '0'; // إظهار الشريط
+    event.stopPropagation(); // منع انتقال الحدث للأعلى
+});
+
+// إخفاء شريط البحث عند الضغط على زر الإغلاق
+closeButton.addEventListener('click', (event) => {
+    searchBar.style.top = '-60px'; // إخفاء الشريط
+    event.stopPropagation(); // منع انتقال الحدث للأعلى
+});
+
+// إخفاء الشريط عند الضغط في أي مكان آخر
+document.addEventListener('click', (event) => {
+    // التأكد من أن النقر ليس على الشريط أو الشعار
+    if (!searchBar.contains(event.target) && event.target !== searchIcon) {
+        searchBar.style.top = '-60px'; // إخفاء الشريط
+    }
+});
+    </script>
+</body>
+</html>

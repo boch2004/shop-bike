@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Emilys+Candy&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.boch h1{
+    font-family: "Emilys Candy", serif;
+    color: #F0EEE9;
+    margin-left: 25px;
+    font-size: 2.25rem;
+}
+
+
+.icon {
+    display: flex; flex-direction: row;width: 128px; justify-content: space-between;margin-right: 25px;
+}
+.icon img {
+    width: 25px
+}
+
+.icon button {
+    background: none;
+    border: none;
+}
+
+
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.search-bar {
+    position: fixed;
+    top: -60px; /* إخفاء الشريط في البداية */
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    transition: top 0.4s ease; /* تأثير الانزلاق */
+    z-index: 1000;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+/* TODO: sec2 */
+.sec2 button{
+    background-color: #D6955B;
+    width: 250px;
+    height: 50px;
+
+}   
+.sec2 h1 {
+    text-align: center;
+    font-size: 25px;
+
+}
+#mycart {
+    position: absolute;
+    top:100px;
+    
+}
+
+.sec2 {
+
+box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
+
+
+
+
+
+footer {
+    padding: 50px;
+    background-color: #18534F;
+    height: 400px ;
+}
+footer {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
+footer li {
+    color: #ECF8F6;
+    padding-top: 20px;
+} 
+footer ul {
+    color: #D6955B;
+    list-style-type: none;
+    padding-top: 50px;
+}
+@media(max-width:750px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: max-content;
+    }
+    footer ul {
+        list-style-type: circle;
+
+    }
+}
+footer hr {
+    margin-bottom: 100px;
+}

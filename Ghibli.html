@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Orders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="flex flex-row justify-between h-16 items-center boch bg-[#18534F]">
+        <a href="index.html"><h1 class="text-4xl ml-5">MyGrade</h1></a>
+        <div class="search-container flex flex-row justify-between w-32 mr-5">
+            <button id="searchIcon" class="search-icon"><img class="w-8" src="search.svg" alt=""></button>
+            <button><a href="Login.html"><img src="account-bold.svg" alt="" ></a></button>
+            <button><a href="store.html"><img src="shopping-bag.svg" alt=""></a></button>
+            <div id="searchBar" class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search ...">
+                <button id="closeButton">×</button>
+            </div>
+        </div>
+    </div>
+    <center><h1 class="text-4xl pt-20 mb-10 ">Nos services</h1></center>
+    <div class="grid grid-cols-4 gap-10 service mx-32">
+        <div><img src="https://espacevelo.tn/img/cms/Nos-Services/320-280.png" alt=""></div>
+        <div><h1>Atelier Pro</h1><p> Confiez l'entretien, la réparation ou la révision de votre vélo à nos professionnels qualifiés. Dans notre atelier, nos techniciens expérimentés sont là pour vous offrir les meilleurs conseils, garantissant ainsi des réparations et un entretien impeccables pour votre vélo, quel que soit son type</p></div>
+        <div><img src="8608df0d-0d9b-4020-b614-2b152748b8bf.jfif" alt=""></div>
+        <div><h1>Location Vélos</h1><p>Espace vélo propose des locations des vélos pour la journée, la semaine ou pour le weekend. Notre assortiment compte des vélos VTT, VTC, vélo de route, vélo pliante et vélos électriques.description de service location vélo.</p></div>
+        <div><img src="Designer (1).jpeg" alt=""></div>
+        <div><h1>Payez en plusieurs fois</h1><p>Payez-en trois fois sans frais : Rendez-vous dans votre magasin Espace Vélo ,</p> 
+            <ul style="list-style-type: square;">
+            <li>Une pièce d’identité</li>
+            <li>hèque au nom de l’emprunteur</li>
+            </ul>
+        </div>
+        <div><img src="676ddf51-99db-42a2-8a4b-ca17d82b36f5.jfif" alt=""></div>
+        <div><h1>Garantie sur l'achat</h1><p>Protégez votre nouveau vélo avec notre assurance exclusive "Garantie Vélo" chez Espace Vélo. Bénéficiez d'une couverture complète pour votre vélo et ses accessoires pendant 24 mois après l'achat. Sécurisez votre investissement dès aujourd'hui.</p></div>
+    </div>
+</body>
+<footer class="mt-28">
+    <ul>
+        <li><i class="fa fa-envelope" style="font-size:24px ; color:black "></i>********************</li>
+        <li><i class="fa fa-phone" style="font-size:24px ; color:black ; padding-right: 4px; "></i>********************</li>
+        <li><i class="fa fa-map-marker" style="font-size:24px ; color:black ; padding-right: 10px;"></i>*******************</li>
+    </ul>
+    <ul>
+        <h3>Liens utiles</h3>
+        <li>Services</li>
+        <li>Nous contacter</li>
+        <li>Magasins Exist</li>
+        <li>Blog</li>
+    </ul>
+    <ul>
+        <h3>Informations</h3>
+        <li>Présentation</li>
+        <li>Connexion</li>
+        <li>Mon compte</li>
+    </ul>
+    <ul>
+        <h3>Produits</h3>
+        <li>Promotions</li>
+        <li>Nouveaux produits</li>
+        <li>Meilleures ventes</li>
+    </ul>
+
+
+</footer>
+
+<script>
+    // الحصول على العناصر
+const searchIcon = document.getElementById('searchIcon');
+const searchBar = document.getElementById('searchBar');
+const closeButton = document.getElementById('closeButton');
+
+// إظهار شريط البحث عند الضغط على الشعار
+searchIcon.addEventListener('click', (event) => {
+    searchBar.style.top = '0'; // إظهار الشريط
+    event.stopPropagation(); // منع انتقال الحدث للأعلى
+});
+
+// إخفاء شريط البحث عند الضغط على زر الإغلاق
+closeButton.addEventListener('click', (event) => {
+    searchBar.style.top = '-60px'; // إخفاء الشريط
+    event.stopPropagation(); // منع انتقال الحدث للأعلى
+});
+
+// إخفاء الشريط عند الضغط في أي مكان آخر
+document.addEventListener('click', (event) => {
+    // التأكد من أن النقر ليس على الشريط أو الشعار
+    if (!searchBar.contains(event.target) && event.target !== searchIcon) {
+        searchBar.style.top = '-60px'; // إخفاء الشريط
+    }
+});
+
+</script>
+</html>
+
+

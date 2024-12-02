@@ -1,0 +1,287 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Emilys+Candy&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    display: flex; flex-direction: row;width: 128px; justify-content: space-between;margin-right: 25px;
+}
+.icon img {
+    width: 25px
+}
+
+.icon button {
+    background: none;
+    border: none;
+}
+
+
+
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.search-bar {
+    position: fixed;
+    top: -60px; /* إخفاء الشريط في البداية */
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    transition: top 0.4s ease; /* تأثير الانزلاق */
+    z-index: 1000;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+
+.container .form {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login {
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup {
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
+.container.active .signup {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.container.active .forms {
+    height: 600px;
+}
+
+.container .form .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #FEEAA1;
+    border-radius: 25px;
+}
+
+.form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: #FEEAA1;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid)~i {
+    color: #FEEAA1;
+}
+
+.input-field i.icon {
+    left: 0;
+}
+
+.input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin-right: 10px;
+    accent-color: #FEEAA1;
+}
+
+.form .text {
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #FEEAA1;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 35px;
+}
+
+.form .button input {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #FEEAA1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #FEEAA1;
+}
+
+.form .login-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+.boch h1{
+    font-family: "Emilys Candy", serif;
+    color: #F0EEE9;
+    margin-left: 25px;
+    font-size: 2.25rem;
+}
+
+
+
+
+
+footer {
+    padding: 50px;
+    background-color: #18534F;
+    height: 400px ;
+}
+footer {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
+footer li {
+    color: #ECF8F6;
+    padding-top: 20px;
+} 
+footer ul {
+    color: #D6955B;
+    list-style-type: none;
+    padding-top: 50px;
+}
+@media(max-width:750px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: max-content;
+    }
+    footer ul {
+        list-style-type: circle;
+
+    }
+}
+footer hr {
+    margin-bottom: 100px;
+}

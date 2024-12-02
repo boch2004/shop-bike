@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chipi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<div class="flex flex-row justify-between h-16 items-center fixed top-0 left-0 right-0 boch bg-[#226D68]">
+    <a href="index.html"><h1 class="text-4xl ml-5">MyGrade</h1></a>
+    <div class="search-container  flex flex-row justify-between w-32 mr-5">
+        <button id="searchIcon" class="search-icon"><img class="w-8" src="search.svg" alt=""></button>
+        <button><a href="Login.html"><img src="account-bold.svg" alt="" ></a></button>
+        <button><a href="store.html"><img src="shopping-bag.svg" alt=""></a></button>
+        <a href="store.html"><span id="spn">0</span></a>
+        <div id="searchBar" class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search ...">
+            <button id="closeButton">×</button>
+        </div>
+    </div>
+</div>
+<center><h1 class="text-4xl text-[#18534F] my-11 mt-40">Pièces détachées</h1></center>
+<style>
+  p {
+    font-size: small;
+  }
+  .text {
+    height: 175px;
+  }
+</style>
+<div class="grid grid-cols-4 gap-10">
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/710845845130-01_96bfdcf8-2afb-4f3a-a10f-c5553e5c1670.jpg?v=1718274020&width=1100"  alt=""><div class="text"> <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/4524667687023-01.jpg?v=1711354733&width=1100"  alt=""><div class="text"> <h1>Cassette 11V SHIMANO SLX CS-M7000</h1>
+  <p class="price">$19.99</p>
+  <p>La cassette VTT SHIMANO SLX CS-M7000* rend le 11 vitesses accessibles à toutes les bourses grâce à une conception un peu moins haut </p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/166941_15722486878266.jpg?v=1712327165&width=1100"  alt=""><div class="text"> <h1>Pédales Capteur de Puissance FAVERO ASSIOMA DUO</h1>
+  <p class="price">$19.99</p>
+  <p>Entrez dans une nouvelle ère et rendez votre entraînement plus concret et efficace que jamais avec les pédales capteurs de puissance FAVERO ASSIOMA.Faciles à installer,.</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/710845818028-01_556c3d35-df35-4762-95b7-595452b024af.jpg?v=1717749006&width=1100"  alt=""><div class="text"> <h1>Dérailleur Arrière SRAM NX EAGLE 12V 50 Dts Noir</h1>
+  <p class="price">$19.99</p>
+  <p>Dans l'optique d'aller toujours plus loin dans la transmission mono-plateau, SRAM propose le dérailleur arrière NX Eagle 12V. S'adaptant à tous les types </p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img class="h-[300px]" src="https://espacevelo.tn/815-thickbox_default/mitas-chambre-a-air-velo-700-x-23c-28c-fv80.jpg"  alt=""><div class="text"> <h1>Chambre à air vélo 700</h1>
+  <p class="price">$19.99</p>
+  <p>Chambre à air Mitas pour vélo de route, gravel et cyclocross, d'une épaisseur de 0,9 mm, pour jantes de diamètre 700 mm..</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/4550170327415-01.jpg?v=1711047076&width=1100"  alt=""><div class="text"> <h1>Plaquettes Organiques SHIMANO</h1>
+  <p class="price">$19.99</p>
+  <p>Ces plaquettes Organique SHIMANO L05A-RF sont destinées aux freins à disque des groupes VTT (2 pistons) et Route de la marque nipponne..Elles sont ici dotées</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/4524667906803-02.webp?v=1726044597&width=1100"  alt=""><div class="text"> <h1>Chaîne 11V SHIMANO </h1>
+  <p class="price">$19.99</p>
+  <p>La Chaîne 11V SHIMANO HG701 XT/ULTEGRA E-BIKE RATED QUICK-LINK est conçue pour remettre à neuf votre transmission onze vitesses.Elle bénéficie du traitement Sil-Tec qui</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/710845853302-02.jpg?v=1717680628&width=1100"  alt=""><div class="text"> <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/4524667122562-01_8f73cbc8-a4dc-4c9b-a8a6-92ba7aacb6b8.jpg?v=1727862160&width=1100"  alt=""><div class="text"> <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/4550170819026-00_4cd5a77e-6021-4461-9a2c-a5988540dee9.jpg?v=1727868560&width=1100"  alt=""><div class="text"> <h1>Chaussure Route SIDI GENIUS 10 Blanc</h1>
+  <p class="price">$19.99</p>
+  <p>Polyvalentes, les chaussures route SIDI GENIUS 10 présentent une nouvelle semelle Carbon Composite 20 et le système de fermeture Tecno 3 éprouvé. La chaussure propose</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/4550170168643-01_3fc27231-b576-4867-8488-9e20dd53d5f4.jpg?v=1727862159&width=1100"  alt=""><div class="text"> <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+    <div><div class="card"><div><img src="https://www.probikeshop.fr/cdn/shop/files/ST-R9270-R-shic219-primary_2_750_750.jpg?v=1727870956&width=1100"  alt=""><div class="text"> <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p></div>
+  <p><button  onclick="increaseCounter()">Add to Cart</button></p></div></div></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  let count = 0; // متغير لتخزين القيمة الحالية
+
+  function increaseCounter() {
+      count++; // زيادة القيمة
+      document.getElementById("spn").textContent = count; // تحديث النص في العنصر
+  }
+</script>
+</body>
+
+<footer class="mt-20">
+    <ul>
+        <li><i class="fa fa-envelope" style="font-size:24px ; color:#D6955B "></i>********************</li>
+        <li><i class="fa fa-phone" style="font-size:24px ; color:#D6955B ; padding-right: 4px; "></i>********************</li>
+        <li><i class="fa fa-map-marker" style="font-size:24px ; color:#D6955B ; padding-right: 10px;"></i>*******************</li>
+    </ul>
+    <ul>
+        <h3>Liens utiles</h3>
+        <li>Services</li>
+        <li>Nous contacter</li>
+        <li>Magasins Exist</li>
+        <li>Blog</li>
+    </ul>
+    <ul>
+        <h3>Informations</h3>
+        <li>Présentation</li>
+        <li>Connexion</li>
+        <li>Mon compte</li>
+    </ul>
+    <ul>
+        <h3>Produits</h3>
+        <li>Promotions</li>
+        <li>Nouveaux produits</li>
+        <li>Meilleures ventes</li>
+    </ul>
+
+
+</footer>
+
+</html>
+

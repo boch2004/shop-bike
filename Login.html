@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="login.css" />
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div style=" position:absolute;top: 0;left: 0;width:100%;"> 
+    <div class="boch" style=" display: flex;flex-direction:row;justify-content: space-between; height: 64px;align-items: center;background-color:#18534F ;">   <!-- class="flex flex-row justify-between h-16 items-center boch bg-emerald-200 -->
+        <a href="index.html"><h1 style="  display: inline-block;">MyGrade</h1></a>
+        <div  class="icon search-container flex flex-row justify-between w-32 mr-5" style="display: flex; flex-direction: row;width: 128px; justify-content: space-between;margin-right: 25px;">
+          <button id="searchIcon" class="search-icon"><img class="w-8" src="search.svg" alt=""></button>
+          <button><a href="Login.html"><img src="account-bold.svg" alt="" ></a></button>
+          <button><a href="store.html"><img src="shopping-bag.svg" alt=""></a></button>
+          <div id="searchBar" class="search-bar">
+              <input type="text" id="searchInput" placeholder="Search ...">
+              <button id="closeButton">×</button>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="container" style="margin-top: 100px;">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Login</span>
+
+          <form action="#">
+            <div class="input-field">
+              <input type="text" placeholder="Enter your email" required />
+              <i class="uil uil-envelope icon"></i>
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" placeholder="Enter your password" required />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck" />
+                <label for="logCheck" class="text">Remember me</label>
+              </div>
+
+              <a href="#" class="text">Forgot password?</a>
+            </div>
+
+            <div class="input-field button">
+              <input type="button" value="Login" />
+            </div>
+          </form>
+
+          <div class="login-signup">
+            <span class="text"
+              >Not a member?
+              <a href="#" class="text signup-link">Signup Now</a>
+            </span>
+          </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form signup">
+          <span class="title">Registration</span>
+
+          <form action="#">
+            <div class="input-field">
+              <input type="text" placeholder="Enter your name" required />
+              <i class="uil uil-user"></i>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Enter your email" required />
+              <i class="uil uil-envelope icon"></i>
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" placeholder="Create a password" required />
+              <i class="uil uil-lock icon"></i>
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" placeholder="Confirm a password" required />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="termCon" />
+                <label for="termCon" class="text">I accepted all terms and conditions</label>
+              </div>
+            </div>
+
+            <div class="input-field button">
+              <a href="Login.html"><input type="button" value="Signup" /></a>
+            </div>
+          </form>
+
+          <div class="login-signup">
+            <span class="text"
+              >Already a member?
+              <a href="#" class="text login-link">Login Now</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div style=" position:absolute;bottom: -500px;left: 0;width:100%;"> 
+    <footer>
+      
+      <ul>
+          <li><i class="fa fa-envelope" style="font-size:24px ; color:#D6955B "></i>********************</li>
+          <li><i class="fa fa-phone" style="font-size:24px ; color:#D6955B ; padding-right: 4px; "></i>********************</li>
+          <li><i class="fa fa-map-marker" style="font-size:24px ; color:#D6955B ; padding-right: 10px;"></i>*******************</li>
+      </ul>
+      <ul>
+          <h3>Liens utiles</h3>
+          <li>Services</li>
+          <li>Nous contacter</li>
+          <li>Magasins Exist</li>
+          <li>Blog</li>
+      </ul>
+      <ul>
+          <h3>Informations</h3>
+          <li>Présentation</li>
+          <li>Connexion</li>
+          <li>Mon compte</li>
+      </ul>
+      <ul>
+          <h3>Produits</h3>
+          <li>Promotions</li>
+          <li>Nouveaux produits</li>
+          <li>Meilleures ventes</li>
+      </ul>
+  
+  
+  </footer>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

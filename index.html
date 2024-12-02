@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chipi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<div class="flex flex-row justify-between h-16 items-center boch bg-[#226D68]">
+    <h1 class="text-4xl ml-5">MyGrade</h1>
+    <div class="search-container  flex flex-row justify-between w-32 mr-5">
+        <button id="searchIcon" class="search-icon"><img class="w-8" src="search.svg" alt=""></button>
+        <button><a href="Login.html"><img src="account-bold.svg" alt="" ></a></button>
+        <button><a href="store.html"><img src="shopping-bag.svg" alt=""></a></button>
+        <div id="searchBar" class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search ...">
+            <button id="closeButton">×</button>
+        </div>
+    </div>
+</div>
+<center><div class="container1 mb-10">
+    <div class="slider">
+        <img src="Designer (2).jpeg" alt="Slide 1" class="active">
+        <img src="DALL·E 2024-11-26 14.49.52 - A series of bicycles displayed in a clean and aesthetic arrangement. Each bike represents a different style_ a sleek modern road bike, a vintage cruis.webp" alt="Slide 2">
+        <img src="Designer.jpeg" alt="Slide 3">
+    </div>
+        </div>
+</center>
+<!-- <div class=" flex justify-center  mb-7">
+    <img class="w-full" src="78317281a76f2aa0930272fd5bd005a3.jpg" alt="">
+</div>  -->
+<center><h1 class="text-4xl mb-20 text-[#18534F]">Nos Vélos par Type</h1></center>
+<div class="img0 flex justify-around mb-5 boxs1">
+    <div><div>
+                    <img src="https://espacevelo.tn/img/cms/ii1.jpg" alt=""></div><div><h1>VTT</h1></div></div>
+    <div><div><img src="https://espacevelo.tn/img/cms/Cat%C3%A9gories/h3_categori2.png" alt=""></div><div><h1>Route</h1></div></div>
+    <div><div><img src="https://espacevelo.tn/img/cms/Cat%C3%A9gories/h3_categori4.png" alt=""></div><div><h1>VTC</h1></div></div>
+    <!-- Monster Hunter Rise: Iori Deformed Plush -->
+    <div><div><img src="https://espacevelo.tn/img/cms/elect.jpg" alt=""></div><div><h1>Électrique</h1></div></div>
+</div></div><div>
+<center><h1 class="text-4xl mb-20 text-[#18534F]">Nos services</h1></center>
+<div class="img1 flex justify-around boxs">
+    <div>
+        <div><a href="Ghibli.html"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="https://espacevelo.tn/img/cms/Nos-Services/320-280.png"></div><div><h1>Atelier Pro</h1></div></div></a>
+        <div><div><a href="Ghibli.html"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="8608df0d-0d9b-4020-b614-2b152748b8bf.jfif" alt=""></div><div><h1>Location Vélos</h1></div></div></a>
+        <div><div><a href="Ghibli.html"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="Designer (1).jpeg" alt=""></div><div><h1>Payez en plusieurs fois</h1></div></div></a>
+        <div><div><a href="Ghibli.html"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="676ddf51-99db-42a2-8a4b-ca17d82b36f5.jfif" alt=""></div><div><h1>Garantie sur l'achat</h1></div></div></a>
+    </div>
+
+    <center><h1 class="text-4xl text-[#18534F] mb-20">Nos Marques</h1></center>
+    <div class="brands-carousel">
+        <div class="carousel-wrapper">
+        <div class="carousel-track">
+            <div class="brand-item"><img src="https://www.fishingandoutdoorworld.com.au/cdn/shop/collections/Logo-Shimano_1350x844.jpg?v=1676435794" alt="Brand 1"></div>
+            <div class="brand-item"><img src="data:image/png;base64,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" alt="Brand 2"></div>
+            <div class="brand-item"><img src="https://marketplacer.imgix.net/Yz/N7vwvewZ9UlfHd6LSL3RhpxHs.jpg?auto=format&fm=pjpg&fit=max&alt=CAMPAGNOLO%20Logo&w=1600&h=1000&s=aee64ed6c11384fd7f9ff26d6aa018b8" alt="Brand 3"></div>
+            <div class="brand-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnYrr0lAPzNwOIz5sU420PXqcEbR51jWR3CA&s" alt="Brand 4"></div>
+            <div class="brand-item"><img src="https://otomax.store/cdn/shop/collections/MICHELIN.webp?v=1714138477" alt="Brand 5"></div>
+            <div class="brand-item"><img src="https://logowik.com/content/uploads/images/fox-racing-shox7338.logowik.com.webp" alt=""></div>
+            <div class="brand-item"><img src="https://getlogo.net/wp-content/uploads/2019/10/rockshox-logo-vector.png" alt=""></div>
+            <div class="brand-item"><img src="https://www.fishingandoutdoorworld.com.au/cdn/shop/collections/Logo-Shimano_1350x844.jpg?v=1676435794" alt="Brand 1"></div>
+            <div class="brand-item"><img src="data:image/png;base64,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" alt="Brand 2"></div>
+            <div class="brand-item"><img src="https://marketplacer.imgix.net/Yz/N7vwvewZ9UlfHd6LSL3RhpxHs.jpg?auto=format&fm=pjpg&fit=max&alt=CAMPAGNOLO%20Logo&w=1600&h=1000&s=aee64ed6c11384fd7f9ff26d6aa018b8" alt="Brand 3"></div>
+            <div class="brand-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnYrr0lAPzNwOIz5sU420PXqcEbR51jWR3CA&s" alt="Brand 4"></div>    
+        </div>
+        </div>
+        <!-- <button class="carousel-control prev" onclick="prevBrand()">‹</button>
+        <button class="carousel-control next" onclick="nextBrand()">›</button> -->
+    </div>
+    
+    <center><h1 class="text-4xl text-[#18534F] my-11 mb-20">Pièces détachées</h1></center>
+    <div class="img1 flex justify-around boxs">
+        <div><div><a href="Pre-Orders.html"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="https://www.probikeshop.fr/cdn/shop/files/4713170269707-01_977315f9-6087-4898-8efd-8eb11401d7bc.jpg?v=1711046997&width=1100" alt=""></div><div><h1>Akemi Homura POP UP PARADE Figurine</h1></div></div></a>
+        <div><div><a href="Pre-Orders.html"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="https://www.probikeshop.fr/cdn/shop/files/8022530030946-01.jpg?v=1712063265&width=1100" alt=""></div><div><h1>Frieren POP UP PARADE Figurine</h1></div></div></a>
+        <div><div><a href="Pre-Orders.html"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="https://www.probikeshop.fr/cdn/shop/files/710845851575-01.jpg?v=1711046602&width=1100" alt=""></div><div><h1>Meiko Honma (Menma) POP UP PARADE Figurine</h1></div></div></a>
+        <div><div><a href="Pre-Orders.html"><img class="transition duration-500 ease-in-out transform hover:scale-110" src="https://www.probikeshop.fr/cdn/shop/files/3528704246793-01.jpg?v=1711047203&width=1100" alt=""></div><div><h1>Taiga Aisaka POP UP PARADE Figurine</h1></div></div></a>
+    </div>
+    <center><a href="Pre-Orders.html"><button class="bg-[#72A1E5] mb-10 mt-10 ">View all</button></center></a>
+
+<div class="flex justify-around text-center items-center ">
+    <div class="ml-20">
+        <h1 class="text-4xl text-[#D6955B]">Notre Boutique</h1>
+        <i class="fa fa-clock-o text-6xl text-[#FEEAA1]"></i>
+        <h1 class="text-l text-[#D6955B]">Horaires d'ouvertures</h1>
+        <p class="text-sm">Lundi-Vendredi : 8:30h- 13:30h / 15h- 18h<br>
+    
+        Samedi : 8:30h- 14h
+    </p>
+        
+    </div>
+    <div class="flex justify-end">
+        <iframe class="w-[800px]" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d827.9839026984121!2d10.092158724618411!3d33.89131210725841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDUzJzI4LjciTiAxMMKwMDUnMjcuNCJF!5e0!3m2!1sar!2stn!4v1732637341634!5m2!1sar!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="size-10" <img src="image.png" style="filter: grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(3);"></button>
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <ul>
+        <li><i class="fa fa-envelope" style="font-size:24px ; color:#D6955B "></i>********************</li>
+        <li><i class="fa fa-phone" style="font-size:24px ; color:#D6955B ; padding-right: 4px; "></i>********************</li>
+        <li><i class="fa fa-map-marker" style="font-size:24px ; color:#D6955B ; padding-right: 10px;"></i>*******************</li>
+    </ul>
+    <ul>
+        <h3>Liens utiles</h3>
+        <li>Services</li>
+        <li>Nous contacter</li>
+        <li>Magasins Exist</li>
+        <li>Blog</li>
+    </ul>
+    <ul>
+        <h3>Informations</h3>
+        <li>Présentation</li>
+        <li>Connexion</li>
+        <li>Mon compte</li>
+    </ul>
+    <ul>
+        <h3>Produits</h3>
+        <li>Promotions</li>
+        <li>Nouveaux produits</li>
+        <li>Meilleures ventes</li>
+    </ul>
+
+
+</footer>
+
+</html>
